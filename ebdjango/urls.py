@@ -15,9 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import include,url
 from django.contrib import admin
+from dashing.utils import router
+from django.conf.urls import include
 
 urlpatterns = [
+<<<<<<< HEAD
 	url(r'^volunteerimpact/', include('volunteerimpact.urls.py')),
 	url(r'^admin/', admin.site.urls),
     
+=======
+    url(r'^admin/', admin.site.urls),
+    url(r'^dashboard/', include(router.urls)),
+>>>>>>> 0766dc4b0bf0aba85f8a746883b79b4bb94e24cd
 ]
+
+
