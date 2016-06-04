@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>Dashboard<small> Volunteer Impact</small></h1>
+</div>
+
+
+    <h2>Welcome to the home DASHBOARD Wagtail site!</h2>
+<p> Roger, we still need to integrate the form module for Wagtail (Get data) and then we need to integrate the Dashing Dashboard on one of the pages </p>
+
+    <p>You can access the admin interface <a href="{% url 'wagtailadmin_home' %}">here</a> (make sure you have run "./manage.py createsuperuser" in the console first).
+
+    <p>If you haven't already given the documentation a read, head over to <a href="http://docs.wagtail.io/">http://docs.wagtail.io</a> to start building on Wagtail</p>
+
+<h3> Other wise good luck with the RHoK </h3>
+
+<div class="container">
+<h4> SIDE NOTE: This site is bootstraped and ready to go, below is an example of a form (Bootstrapped) see here: http://getbootstrap.com/css/ </h1>
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Project Location</label>
+    <input type="location" class="form-control" id="exampleInputEmail1" placeholder="Melbourne, Victoria">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Number of Volunteers</label>
+    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="10">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Date</label>
+    <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Date">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Trees Planted (number)</label>
+    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="100">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Weeding (Metres squared)</label>
+    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="60 metres squared">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+
+<h1> OR </h1>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+
+<div class="jumbotron">
+  <h1>View your Dashboard</h1>
+  <p>Some text goes here...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">View Dashboard</a></p>
+</div>
+
+<h2> Some warnings below </h2>
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+
+<h1> - </h1>
+<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+
+<h1> - </h1>
+
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+</div>
+
+
+
+{% endblock %}
