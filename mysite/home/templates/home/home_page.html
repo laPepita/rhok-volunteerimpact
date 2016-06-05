@@ -3,27 +3,29 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-<div class="page-header">
-  <h1>Dashboard<small> Volunteer Impact</small></h1>
+
+<div class="jumbotron">
+<div class="container">
+  <h1>Volunteer Impact</h1>      
+  <p>Volunteer Impact is the most popular way to keep track of projects on the web. Compare and track your results with our Dashboard!</p>
+</div>
 </div>
 
-
-    <h3>Welcome to the home DASHBOARD Wagtail site!</h3>
-<p> Roger, we still need to integrate the form module for Wagtail (Get data) and then we need to integrate the Dashing Dashboard on one of the pages </p>
-
+<div class="container">
     <p>You can access the admin interface <a href="{% url 'wagtailadmin_home' %}">here</a> (make sure you have run "./manage.py createsuperuser" in the console first).
 
     <p>If you haven't already given the documentation a read, head over to <a href="http://docs.wagtail.io/">http://docs.wagtail.io</a> to start building on Wagtail</p>
+<p>This site is bootstraped and ready to go, below is an example of a form (Bootstrapped) see <a href="http://getbootstrap.com/css/">here</a></p>
 
-<h3> Other wise good luck with the RHoK </h3>
-
+</div>
 <div class="container">
-<h4> SIDE NOTE: This site is bootstraped and ready to go, below is an example of a form (Bootstrapped) see here: http://getbootstrap.com/css/ </h1>
+
+<h2> Input your impact! </h2>
 
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Project Location</label>
-    <input type="location" class="form-control" id="exampleInputEmail1" placeholder="Melbourne, Victoria">
+    <input type="location" class="form-control" id="exampleInputEmail1" placeholder="eg. Melbourne, Victoria">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Number of Volunteers</label>
@@ -34,22 +36,26 @@
     <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Date">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Trees Planted (number)</label>
+    <label for="exampleInputPassword1">Trees Planted</label>
     <input type="number" class="form-control" id="exampleInputPassword1" placeholder="100">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Weeding (Metres squared)</label>
     <input type="number" class="form-control" id="exampleInputPassword1" placeholder="60 metres squared">
   </div>
+	<div class="form-group">
+	  <label for="comment">Comment:</label>
+	  <textarea class="form-control" rows="5" id="comment"></textarea>
+	</div>
 
   <div class="form-group">
     <label for="exampleInputFile">File input</label>
     <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
+    <p class="help-block">Choose a file to upload with your report.</p>
   </div>
   <div class="checkbox">
     <label>
-      <input type="checkbox"> Check me out
+      <input type="checkbox"> I agree to the terms and conditions
     </label>
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
@@ -57,7 +63,7 @@
 
 
 
-<h1> OR </h1>
+<h1> Log in </h1>
 <form class="form-horizontal">
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
@@ -101,11 +107,10 @@
 <span class="label label-warning">Warning</span>
 <span class="label label-danger">Danger</span>
 
-<h1> - </h1>
+
 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
 <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
 
-<h1> - </h1>
 
 <footer class="footer">
       <div class="container">
